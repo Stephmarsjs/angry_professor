@@ -27,11 +27,10 @@ function readLine() {
 // Complete the angryProfessor function below.
 function angryProfessor(minStudents, arrivalTimes) {
     arrivalTimes = arrivalTimes.filter((time) => time <= 0);
-        if (arrivalTimes.length >= minStudents) {
-            return 'NO';
-        }
-        return 'YES';
-    }
+
+    return arrivalTimes.length < minStudents ? 'YES' : 'NO';
+}
+
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
