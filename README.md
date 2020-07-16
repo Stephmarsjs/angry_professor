@@ -1,0 +1,1 @@
+ angryProfessor function return 'YES' if class cancelled, or 'NO'
