@@ -27,9 +27,9 @@ function readLine() {
 // Complete the angryProfessor function below.
 function angryProfessor(minStudents, arrivalTimes) {
     arrivalTimes = arrivalTimes.filter((time) => time <= 0);
-    if (arrivalTimes.length >= minStudents) {
-        return 'NO';
-    }
+        if (arrivalTimes.length >= minStudents) {
+            return 'NO';
+        }
         return 'YES';
     }
 function main() {
